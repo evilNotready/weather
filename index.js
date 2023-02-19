@@ -25,7 +25,7 @@ form.onsubmit = function (e) {
     //trim обрезает пробелы а инпут значение выводит
     let city = input.value.trim();
     // теперь надо сделать запрос на сервак, чтобы получить запрос
-    const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}` //адрес запроса
+    const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}` //адрес запроса
     fetch(url).then((response) => {
         return response.json()
     }).then((data) => {

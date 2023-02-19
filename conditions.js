@@ -1,4 +1,3 @@
-
 const conditions = [
     {
     "code": 1000,
